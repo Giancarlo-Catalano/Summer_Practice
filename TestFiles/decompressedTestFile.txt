@@ -1,0 +1,902 @@
+/home/gian/CLionProjects/Evocom/cmake-build-debug/Evocom
+attempting to compile the file
+called XNFCoDec.compressFile( /home/gian/CLionProjects/Evocom/TestFiles/rawTestFile.txt , /home/gian/CLionProjects/Evocom/TestFiles/compressedTestFile.gac
+the file size is 39
+the calculated ConjLength is  6
+
+Called constructor for XNFEncoder< 6 >
+#Called encodeStream
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+read  01001001
+read  00100000
+read  01110010
+read  01100101
+read  01100001
+read  01101100
+read  01101100
+read  01111001
+read  00100000
+read  01101000
+read  01101111
+read  01110000
+read  01100101
+read  00100000
+read  01110100
+read  01101000
+read  01101001
+read  01110011
+read  00100000
+read  01100110
+read  01101001
+read  01101100
+read  01100101
+read  00100000
+read  01100010
+read  01100101
+read  01100011
+read  01101111
+read  01101101
+read  01100101
+read  01110011
+read  00100000
+read  01110011
+read  01101101
+read  01100001
+read  01101100
+read  01101100
+read  01100101
+read  01110010
+After improvement, the XNF is  {XNF<6> size = 10, elements = {01*1*0, 100*01, 01000*, 000*11, 011*01, 000*00, 01101*, 1000*0, 001010, 001100, }
+After improvement, the XNF is  {XNF<6> size = 7, elements = {0100*1, 00*010, 01101*, 011110, 100110, 100000, 011000, }
+After improvement, the XNF is  {XNF<6> size = 11, elements = {*00011, 0*0110, *00101, 01*101, 01*011, 0011*0, 011100, 001010, 011001, 100100, 100001, }
+After improvement, the XNF is  {XNF<6> size = 11, elements = {0*0101, 1000*1, 010*00, 00*111, 011011, 001010, 000000, 001001, 100100, 011100, 000110, }
+After improvement, the XNF is  {XNF<6> size = 7, elements = {0*1110, 000111, 000010, 100110, 001011, 010001, 100000, }
+After improvement, the XNF is  {XNF<6> size = 7, elements = {0*1***, 010***, 000*1*, *0010*, 1000**, 100110, 000001, }
+After improvement, the XNF is  {XNF<6> size = 16, elements = {0*101*, 10010*, 0000*0, 01*000, 01010*, 0100*1, 0111*0, 0001**, 0*1001, 00111*, 1000**, 011101, 010110, 001100, 100110, 000011, }
+XNF was empty, it will be left as is
+The XNFs to be encoded are:
+{{XNF<6> size = 10, elements = {01*1*0, 100*01, 01000*, 000*11, 011*01, 000*00, 01101*, 1000*0, 001010, 001100, }, {XNF<6> size = 7, elements = {0100*1, 00*010, 01101*, 011110, 100110, 100000, 011000, }, {XNF<6> size = 11, elements = {*00011, 0*0110, *00101, 01*101, 01*011, 0011*0, 011100, 001010, 011001, 100100, 100001, }, {XNF<6> size = 11, elements = {0*0101, 1000*1, 010*00, 00*111, 011011, 001010, 000000, 001001, 100100, 011100, 000110, }, {XNF<6> size = 7, elements = {0*1110, 000111, 000010, 100110, 001011, 010001, 100000, }, {XNF<6> size = 7, elements = {0*1***, 010***, 000*1*, *0010*, 1000**, 100110, 000001, }, {XNF<6> size = 16, elements = {0*101*, 10010*, 0000*0, 01*000, 01010*, 0100*1, 0111*0, 0001**, 0*1001, 00111*, 1000**, 011101, 010110, 001100, 100110, 000011, }, {XNF<6> size = 0, elements = {}}
+#Called encodeXNFDimensions
+
+Encoded the dimensions ConjLength = 6 , amountofGenes = 10
+The sorted conjunctions are
+{000*00, 000*11, 001100, 001010, 01*1*0, 01101*, 011*01, 01000*, 100*01, 1000*0}
+
+Encoded single conjunction 000*00 as the int  18 (takes  10 bits)
+9  deltas were constructed
+#Called encodeDeltas
+After unzipping the deltas, there are  9 popCounts,  9 arrangements and  29 directions
+PopCounts:{2, 4, 2, 4, 4, 3, 3, 4, 3}
+Ranges And Arrangements:{ 15 , 0 },{ 15 , 0 },{ 15 , 5 },{ 15 , 10 },{ 15 , 0 },{ 20 , 0 },{ 20 , 4 },{ 15 , 8 },{ 20 , 0 },
+
+Directions:1,1,0,0,0,1,1,0,1,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,1,
+
+#Called encodeDeltaPopCounts
+Huffman Coder: {2 -> 0, 3 -> 10, 4 -> 111, 5 -> 1101, 6 -> 1100, }
+The ArithmeticEncodedUnit occupies 2 bytes
+checking if a range of  15 causes an overflow, the accumulator = 1
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 15
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 225
+Encoding range = 15 , value = 5 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 3375
+Encoding range = 15 , value = 10 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 50625
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 15
+Encoding range = 20 , value = 0 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 300
+Encoding range = 20 , value = 4 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 6000
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 15 , value = 8 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 15
+Encoding range = 20 , value = 0 in Arithmetic Coder
+
+Wrote  22 buffers onto stream
+#Called encodeXNFDimensions
+
+Encoded the dimensions ConjLength = 6 , amountofGenes = 7
+The sorted conjunctions are
+{00*010, 011000, 01101*, 011110, 0100*1, 100110, 100000}
+
+Encoded single conjunction 00*010 as the int  57 (takes  10 bits)
+6  deltas were constructed
+#Called encodeDeltas
+After unzipping the deltas, there are  6 popCounts,  6 arrangements and  18 directions
+PopCounts:{3, 2, 2, 4, 5, 2}
+Ranges And Arrangements:{ 20 , 13 },{ 15 , 0 },{ 15 , 1 },{ 15 , 0 },{ 6 , 2 },{ 15 , 5 },
+
+Directions:0,0,1,0,1,1,1,1,1,0,0,0,0,1,0,1,0,0,
+
+#Called encodeDeltaPopCounts
+Huffman Coder: {2 -> 0, 3 -> 10, 4 -> 111, 5 -> 1101, 6 -> 1100, }
+The ArithmeticEncodedUnit occupies 2 bytes
+checking if a range of  20 causes an overflow, the accumulator = 1
+Encoding range = 20 , value = 13 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 20
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 300
+Encoding range = 15 , value = 1 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 4500
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  6 causes an overflow, the accumulator = 15
+Encoding range = 6 , value = 2 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 90
+Encoding range = 15 , value = 5 in Arithmetic Coder
+
+Wrote  31 buffers onto stream
+#Called encodeXNFDimensions
+
+Encoded the dimensions ConjLength = 6 , amountofGenes = 11
+The sorted conjunctions are
+{0011*0, 001010, 01*101, 01*011, 011001, 011100, 0*0110, 100100, 100001, *00011, *00101}
+
+Encoded single conjunction 0011*0 as the int  42 (takes  10 bits)
+10  deltas were constructed
+#Called encodeDeltas
+After unzipping the deltas, there are  10 popCounts,  10 arrangements and  25 directions
+PopCounts:{2, 5, 2, 2, 2, 3, 3, 2, 2, 2}
+Ranges And Arrangements:{ 15 , 5 },{ 6 , 0 },{ 15 , 5 },{ 15 , 6 },{ 15 , 1 },{ 20 , 13 },{ 20 , 15 },{ 15 , 1 },{ 15 , 8 },{ 15 , 5 },
+
+Directions:0,0,1,0,1,1,1,1,0,0,0,0,1,1,0,1,0,1,1,1,0,1,1,0,1,
+
+#Called encodeDeltaPopCounts
+Huffman Coder: {2 -> 0, 3 -> 10, 4 -> 111, 5 -> 1101, 6 -> 1100, }
+The ArithmeticEncodedUnit occupies 2 bytes
+checking if a range of  15 causes an overflow, the accumulator = 1
+Encoding range = 15 , value = 5 in Arithmetic Coder
+checking if a range of  6 causes an overflow, the accumulator = 15
+Encoding range = 6 , value = 0 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 90
+Encoding range = 15 , value = 5 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 1350
+Encoding range = 15 , value = 6 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 20250
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 15 , value = 1 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 15
+Encoding range = 20 , value = 13 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 300
+Encoding range = 20 , value = 15 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 6000
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 15 , value = 1 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 15
+Encoding range = 15 , value = 8 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 225
+Encoding range = 15 , value = 5 in Arithmetic Coder
+
+Wrote  44 buffers onto stream
+#Called encodeXNFDimensions
+
+Encoded the dimensions ConjLength = 6 , amountofGenes = 11
+The sorted conjunctions are
+{000000, 000110, 001010, 001001, 00*111, 011011, 011100, 010*00, 0*0101, 100100, 1000*1}
+
+Encoded single conjunction 000000 as the int  0 (takes  10 bits)
+10  deltas were constructed
+#Called encodeDeltas
+After unzipping the deltas, there are  10 popCounts,  10 arrangements and  26 directions
+PopCounts:{2, 2, 2, 3, 3, 3, 2, 3, 3, 3}
+Ranges And Arrangements:{ 15 , 5 },{ 15 , 9 },{ 15 , 0 },{ 20 , 10 },{ 20 , 16 },{ 20 , 0 },{ 15 , 9 },{ 20 , 5 },{ 20 , 9 },{ 20 , 0 },
+
+Directions:1,1,0,1,1,0,1,1,1,0,0,1,0,0,1,1,0,1,0,1,0,1,1,1,0,0,
+
+#Called encodeDeltaPopCounts
+Huffman Coder: {2 -> 0, 3 -> 10, 4 -> 111, 5 -> 1101, 6 -> 1100, }
+The ArithmeticEncodedUnit occupies 2 bytes
+checking if a range of  15 causes an overflow, the accumulator = 1
+Encoding range = 15 , value = 5 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 15
+Encoding range = 15 , value = 9 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 225
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 3375
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 20 , value = 10 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 20
+Encoding range = 20 , value = 16 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 400
+Encoding range = 20 , value = 0 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 8000
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 15 , value = 9 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 15
+Encoding range = 20 , value = 5 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 300
+Encoding range = 20 , value = 9 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 6000
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 20 , value = 0 in Arithmetic Coder
+
+Wrote  60 buffers onto stream
+#Called encodeXNFDimensions
+
+Encoded the dimensions ConjLength = 6 , amountofGenes = 7
+The sorted conjunctions are
+{000010, 000111, 001011, 010001, 0*1110, 100110, 100000}
+
+Encoded single conjunction 000010 as the int  3 (takes  10 bits)
+6  deltas were constructed
+#Called encodeDeltas
+After unzipping the deltas, there are  6 popCounts,  6 arrangements and  17 directions
+PopCounts:{2, 2, 3, 5, 3, 2}
+Ranges And Arrangements:{ 15 , 1 },{ 15 , 9 },{ 20 , 13 },{ 6 , 0 },{ 20 , 19 },{ 15 , 5 },
+
+Directions:1,1,0,1,0,0,1,0,1,1,1,1,0,1,1,0,0,
+
+#Called encodeDeltaPopCounts
+Huffman Coder: {2 -> 0, 3 -> 10, 4 -> 111, 5 -> 1101, 6 -> 1100, }
+The ArithmeticEncodedUnit occupies 2 bytes
+checking if a range of  15 causes an overflow, the accumulator = 1
+Encoding range = 15 , value = 1 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 15
+Encoding range = 15 , value = 9 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 225
+Encoding range = 20 , value = 13 in Arithmetic Coder
+checking if a range of  6 causes an overflow, the accumulator = 4500
+Encoding range = 6 , value = 0 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 27000
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 20 , value = 19 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 20
+Encoding range = 15 , value = 5 in Arithmetic Coder
+
+Wrote  69 buffers onto stream
+#Called encodeXNFDimensions
+
+Encoded the dimensions ConjLength = 6 , amountofGenes = 7
+The sorted conjunctions are
+{000001, 000*1*, 010***, 0*1***, 100110, 1000**, *0010*}
+
+Encoded single conjunction 000001 as the int  1 (takes  10 bits)
+6  deltas were constructed
+#Called encodeDeltas
+After unzipping the deltas, there are  6 popCounts,  6 arrangements and  19 directions
+PopCounts:{3, 2, 2, 6, 3, 3}
+Ranges And Arrangements:{ 20 , 0 },{ 15 , 7 },{ 15 , 12 },{ 1 , 0 },{ 20 , 0 },{ 20 , 12 },
+
+Directions:1,1,0,1,1,1,1,1,0,0,0,1,1,0,1,0,1,1,1,
+
+#Called encodeDeltaPopCounts
+Huffman Coder: {2 -> 0, 3 -> 10, 4 -> 111, 5 -> 1101, 6 -> 1100, }
+The ArithmeticEncodedUnit occupies 2 bytes
+checking if a range of  20 causes an overflow, the accumulator = 1
+Encoding range = 20 , value = 0 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 20
+Encoding range = 15 , value = 7 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 300
+Encoding range = 15 , value = 12 in Arithmetic Coder
+checking if a range of  1 causes an overflow, the accumulator = 4500
+Encoding range = 1 , value = 0 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 4500
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 20 , value = 0 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 20
+Encoding range = 20 , value = 12 in Arithmetic Coder
+
+Wrote  79 buffers onto stream
+#Called encodeXNFDimensions
+
+Encoded the dimensions ConjLength = 6 , amountofGenes = 16
+The sorted conjunctions are
+{000011, 0000*0, 0001**, 001100, 00111*, 01*000, 0111*0, 011101, 01010*, 010110, 0100*1, 0*101*, 0*1001, 10010*, 100110, 1000**}
+
+Encoded single conjunction 000011 as the int  4 (takes  10 bits)
+15  deltas were constructed
+#Called encodeDeltas
+After unzipping the deltas, there are  15 popCounts,  15 arrangements and  42 directions
+PopCounts:{2, 2, 3, 2, 5, 3, 2, 2, 2, 3, 4, 2, 5, 2, 3}
+Ranges And Arrangements:{ 15 , 0 },{ 15 , 1 },{ 20 , 1 },{ 15 , 0 },{ 6 , 0 },{ 20 , 10 },{ 15 , 0 },{ 15 , 2 },{ 15 , 0 },{ 20 , 0 },{ 15 , 3 },{ 15 , 0 },{ 6 , 4 },{ 15 , 0 },{ 20 , 0 },
+
+Directions:0,1,0,1,1,1,1,0,1,1,0,0,1,1,0,1,0,1,1,1,0,1,1,1,1,0,1,0,1,1,0,0,1,1,0,1,1,1,1,0,1,0,
+
+#Called encodeDeltaPopCounts
+Huffman Coder: {2 -> 0, 3 -> 10, 4 -> 111, 5 -> 1101, 6 -> 1100, }
+The ArithmeticEncodedUnit occupies 2 bytes
+checking if a range of  15 causes an overflow, the accumulator = 1
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 15
+Encoding range = 15 , value = 1 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 225
+Encoding range = 20 , value = 1 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 4500
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  6 causes an overflow, the accumulator = 15
+Encoding range = 6 , value = 0 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 90
+Encoding range = 20 , value = 10 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 1800
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 27000
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 15 , value = 2 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 15
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 225
+Encoding range = 20 , value = 0 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 4500
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 15 , value = 3 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 15
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  6 causes an overflow, the accumulator = 225
+Encoding range = 6 , value = 4 in Arithmetic Coder
+checking if a range of  15 causes an overflow, the accumulator = 1350
+Encoding range = 15 , value = 0 in Arithmetic Coder
+checking if a range of  20 causes an overflow, the accumulator = 20250
+It caused an overflow!
+Arithmetic unit overflowed, starting a new one
+
+Encoding range = 20 , value = 0 in Arithmetic Coder
+
+Wrote  100 buffers onto stream
+#Called encodeXNFDimensions
+
+Encoded the dimensions ConjLength = 6 , amountofGenes = 0
+Wrote  100 buffers onto stream
+closing the streams
+compression completed, here's the dump
+called dumpFile in mode = binary
+
+#Called dumpStream
+[00000000][00000000][00000000][00000000][00000000][00000000][00000000][00100111][00101000][00010010][01110111][11110101][11100000][00000101][01010000][00000000][01000000][00001010][00001100][01101111][00000001][10000100][10001110][00011100][11000111][11010000][01011011][01110000][00000001][00011001][01111100][00101000][01011000][01010100][11010001][01000000][01101010][10111100][00001010][10001100][00000101][01111000][10111100][00110101][11011010][01011000][00000000][00101010][01010100][00001001][11011000][00100001][11000000][00011100][11111010][00000000][00000001][10110111][00100110][10101110][00001110][00000001][10010110][11000000][10111000][11100000][00010010][00101101][00101111][01100000][11100000][00001100][01100101][00000000][00111010][10000000][00000110][01101111][10001101][01110100][00000000][01000010][01101100][00101110][11010100][00000000][00101010][00000001][00101100][00000100][10110000][00100000][00011100][00000000][00000000][10111101][10011010][11101111][01011001][10111101][00000000]
+Read 101 units
+
+
+called XNFCoDec.decompressFile( /home/gian/CLionProjects/Evocom/TestFiles/compressedTestFile.gac , /home/gian/CLionProjects/Evocom/TestFiles/decompressedTestFile.txt
+The original file contained 39 units
+This corresponds to ConjLength = 6
+#Called decodeStream
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+Initialized an XNF list
+#Called decodeXNF
+#Called decodeXNFDimensions
+amountOfConjs=10;
+ConjLength_read=6;
+amountOfConjs=10;
+Initialized an XNF list
+Decoded the first conjunction:  000*00
+about to decode  9  symbols
+#Called decodeDeltas
+read 9 popCounts:{2, 4, 2, 4, 4, 3, 3, 4, 3}
+#Called decodeDifferenceMasks
+decoding using these ranges:{15, 15, 15, 15, 15, 20, 20, 15, 20}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 225
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 3375
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 50625
+It caused an overflow!
+The current unit contains  4 values
+extracted value 10 from a range 15
+extracted value 5 from a range 15
+extracted value 0 from a range 15
+extracted value 0 from a range 15
+DecodedInUnit = {10, 5, 0, 0}
+temporary result ={0, 0, 5, 10}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 300
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 6000
+It caused an overflow!
+The current unit contains  3 values
+extracted value 4 from a range 20
+extracted value 0 from a range 20
+extracted value 0 from a range 15
+DecodedInUnit = {4, 0, 0}
+temporary result ={0, 0, 5, 10, 0, 0, 4}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+The current unit contains  2 values
+extracted value 0 from a range 20
+extracted value 8 from a range 15
+DecodedInUnit = {0, 8}
+temporary result ={0, 0, 5, 10, 0, 0, 4, 8, 0}
+the indexes are:
+{0, 0, 5, 10, 0, 0, 4, 8, 0}
+
+
+Decoded the difference masks:
+{3, 15, 6, 30, 15, 7, 13, 53, 7}
+Decoded the directions :{{1, 1}
+{0, 0, 0, 1}
+{1, 0}
+{1, 1, 1, 1}
+{0, 0, 0, 0}
+{0, 0, 0}
+{1, 1, 0}
+{0, 0, 0, 1}
+{0, 0, 1}
+}
+the deltas are
+{Diff:{@0:1, @1:1, }, Diff:{@0:0, @1:0, @2:0, @3:1, }, Diff:{@1:1, @2:0, }, Diff:{@1:1, @2:1, @3:1, @4:1, }, Diff:{@0:0, @1:0, @2:0, @3:0, }, Diff:{@0:0, @1:0, @2:0, }, Diff:{@0:1, @2:1, @3:0, }, Diff:{@0:0, @2:0, @4:0, @5:1, }, Diff:{@0:0, @1:0, @2:1, }}
+the decoded conjunctions are: {XNF<6> size = 10, elements = {1000*0, 100*01, 000*11, 000*00, 001100, 011*01, 01*1*0, 001010, 01000*, 01101*, }
+#Called decodeXNF
+#Called decodeXNFDimensions
+amountOfConjs=7;
+ConjLength_read=6;
+amountOfConjs=7;
+Initialized an XNF list
+Decoded the first conjunction:  00*010
+about to decode  6  symbols
+#Called decodeDeltas
+read 6 popCounts:{3, 2, 2, 4, 5, 2}
+#Called decodeDifferenceMasks
+decoding using these ranges:{20, 15, 15, 15, 6, 15}
+checking if a range of  20 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 20
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 300
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 4500
+It caused an overflow!
+The current unit contains  3 values
+extracted value 1 from a range 15
+extracted value 0 from a range 15
+extracted value 13 from a range 20
+DecodedInUnit = {1, 0, 13}
+temporary result ={13, 0, 1}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  6 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 90
+iterator for arithmetic coder will get increased
+The current unit contains  3 values
+extracted value 5 from a range 15
+extracted value 2 from a range 6
+extracted value 0 from a range 15
+DecodedInUnit = {5, 2, 0}
+temporary result ={13, 0, 1, 0, 2, 5}
+the indexes are:
+{13, 0, 1, 0, 2, 5}
+
+
+Decoded the difference masks:
+{26, 3, 5, 15, 55, 6}
+Decoded the directions :{{0, 0, 1}
+{0, 1}
+{1, 1}
+{1, 1, 0, 0}
+{0, 0, 1, 0, 1}
+{0, 0}
+}
+the deltas are
+{Diff:{@1:0, @3:0, @4:1, }, Diff:{@0:0, @1:1, }, Diff:{@0:1, @2:1, }, Diff:{@0:1, @1:1, @2:0, @3:0, }, Diff:{@0:0, @1:0, @2:1, @4:0, @5:1, }, Diff:{@1:0, @2:0, }}
+the decoded conjunctions are: {XNF<6> size = 7, elements = {100000, 011000, 00*010, 01101*, 011110, 0100*1, 100110, }
+#Called decodeXNF
+#Called decodeXNFDimensions
+amountOfConjs=11;
+ConjLength_read=6;
+amountOfConjs=11;
+Initialized an XNF list
+Decoded the first conjunction:  0011*0
+about to decode  10  symbols
+#Called decodeDeltas
+read 10 popCounts:{2, 5, 2, 2, 2, 3, 3, 2, 2, 2}
+#Called decodeDifferenceMasks
+decoding using these ranges:{15, 6, 15, 15, 15, 20, 20, 15, 15, 15}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  6 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 90
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 1350
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 20250
+It caused an overflow!
+The current unit contains  4 values
+extracted value 6 from a range 15
+extracted value 5 from a range 15
+extracted value 0 from a range 6
+extracted value 5 from a range 15
+DecodedInUnit = {6, 5, 0, 5}
+temporary result ={5, 0, 5, 6}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 300
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 6000
+It caused an overflow!
+The current unit contains  3 values
+extracted value 15 from a range 20
+extracted value 13 from a range 20
+extracted value 1 from a range 15
+DecodedInUnit = {15, 13, 1}
+temporary result ={5, 0, 5, 6, 1, 13, 15}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 225
+iterator for arithmetic coder will get increased
+The current unit contains  3 values
+extracted value 5 from a range 15
+extracted value 8 from a range 15
+extracted value 1 from a range 15
+DecodedInUnit = {5, 8, 1}
+temporary result ={5, 0, 5, 6, 1, 13, 15, 1, 8, 5}
+the indexes are:
+{5, 0, 5, 6, 1, 13, 15, 1, 8, 5}
+
+
+Decoded the difference masks:
+{6, 31, 6, 10, 5, 26, 50, 5, 34, 6}
+Decoded the directions :{{0, 0}
+{1, 0, 1, 1, 1}
+{1, 0}
+{0, 0}
+{0, 1}
+{1, 0, 1}
+{0, 1, 1}
+{1, 0}
+{1, 1}
+{0, 1}
+}
+the deltas are
+{Diff:{@1:0, @2:0, }, Diff:{@0:1, @1:0, @2:1, @3:1, @4:1, }, Diff:{@1:1, @2:0, }, Diff:{@1:0, @3:0, }, Diff:{@0:0, @2:1, }, Diff:{@1:1, @3:0, @4:1, }, Diff:{@1:0, @4:1, @5:1, }, Diff:{@0:1, @2:0, }, Diff:{@1:1, @5:1, }, Diff:{@1:0, @2:1, }}
+the decoded conjunctions are: {XNF<6> size = 11, elements = {100001, 100100, 0*0110, 001010, *00101, 01*101, 0011*0, *00011, 01*011, 011100, 011001, }
+#Called decodeXNF
+#Called decodeXNFDimensions
+amountOfConjs=11;
+ConjLength_read=6;
+amountOfConjs=11;
+Initialized an XNF list
+Decoded the first conjunction:  000000
+about to decode  10  symbols
+#Called decodeDeltas
+read 10 popCounts:{2, 2, 2, 3, 3, 3, 2, 3, 3, 3}
+#Called decodeDifferenceMasks
+decoding using these ranges:{15, 15, 15, 20, 20, 20, 15, 20, 20, 20}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 225
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 3375
+It caused an overflow!
+The current unit contains  3 values
+extracted value 0 from a range 15
+extracted value 9 from a range 15
+extracted value 5 from a range 15
+DecodedInUnit = {0, 9, 5}
+temporary result ={5, 9, 0}
+checking if a range of  20 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 20
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 400
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 8000
+It caused an overflow!
+The current unit contains  3 values
+extracted value 0 from a range 20
+extracted value 16 from a range 20
+extracted value 10 from a range 20
+DecodedInUnit = {0, 16, 10}
+temporary result ={5, 9, 0, 10, 16, 0}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 300
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 6000
+It caused an overflow!
+The current unit contains  3 values
+extracted value 9 from a range 20
+extracted value 5 from a range 20
+extracted value 9 from a range 15
+DecodedInUnit = {9, 5, 9}
+temporary result ={5, 9, 0, 10, 16, 0, 9, 5, 9}
+checking if a range of  20 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+The current unit contains  1 values
+extracted value 0 from a range 20
+DecodedInUnit = {0}
+temporary result ={5, 9, 0, 10, 16, 0, 9, 5, 9, 0}
+the indexes are:
+{5, 9, 0, 10, 16, 0, 9, 5, 9, 0}
+
+
+Decoded the difference masks:
+{6, 12, 3, 14, 28, 7, 12, 21, 49, 7}
+Decoded the directions :{{1, 1}
+{0, 1}
+{1, 0}
+{1, 1, 1}
+{0, 0, 1}
+{0, 0, 1}
+{1, 0}
+{1, 0, 1}
+{0, 1, 1}
+{1, 0, 0}
+}
+the deltas are
+{Diff:{@1:1, @2:1, }, Diff:{@2:0, @3:1, }, Diff:{@0:1, @1:0, }, Diff:{@1:1, @2:1, @3:1, }, Diff:{@2:0, @3:0, @4:1, }, Diff:{@0:0, @1:0, @2:1, }, Diff:{@2:1, @3:0, }, Diff:{@0:1, @2:0, @4:1, }, Diff:{@0:0, @4:1, @5:1, }, Diff:{@0:1, @1:0, @2:0, }}
+the decoded conjunctions are: {XNF<6> size = 11, elements = {0*0101, 011100, 100100, 010*00, 000110, 000000, 001010, 00*111, 1000*1, 001001, 011011, }
+#Called decodeXNF
+#Called decodeXNFDimensions
+amountOfConjs=7;
+ConjLength_read=6;
+amountOfConjs=7;
+Initialized an XNF list
+Decoded the first conjunction:  000010
+about to decode  6  symbols
+#Called decodeDeltas
+read 6 popCounts:{2, 2, 3, 5, 3, 2}
+#Called decodeDifferenceMasks
+decoding using these ranges:{15, 15, 20, 6, 20, 15}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 225
+iterator for arithmetic coder will get increased
+checking if a range of  6 causes an overflow, the accumulator = 4500
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 27000
+It caused an overflow!
+The current unit contains  4 values
+extracted value 0 from a range 6
+extracted value 13 from a range 20
+extracted value 9 from a range 15
+extracted value 1 from a range 15
+DecodedInUnit = {0, 13, 9, 1}
+temporary result ={1, 9, 13, 0}
+checking if a range of  20 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 20
+iterator for arithmetic coder will get increased
+The current unit contains  2 values
+extracted value 5 from a range 15
+extracted value 19 from a range 20
+DecodedInUnit = {5, 19}
+temporary result ={1, 9, 13, 0, 19, 5}
+the indexes are:
+{1, 9, 13, 0, 19, 5}
+
+
+Decoded the difference masks:
+{5, 12, 26, 31, 56, 6}
+Decoded the directions :{{1, 1}
+{0, 1}
+{0, 0, 1}
+{0, 1, 1, 1, 1}
+{0, 1, 1}
+{0, 0}
+}
+the deltas are
+{Diff:{@0:1, @2:1, }, Diff:{@2:0, @3:1, }, Diff:{@1:0, @3:0, @4:1, }, Diff:{@0:0, @1:1, @2:1, @3:1, @4:1, }, Diff:{@3:0, @4:1, @5:1, }, Diff:{@1:0, @2:0, }}
+the decoded conjunctions are: {XNF<6> size = 7, elements = {100000, 000111, 000010, 001011, 0*1110, 010001, 100110, }
+#Called decodeXNF
+#Called decodeXNFDimensions
+amountOfConjs=7;
+ConjLength_read=6;
+amountOfConjs=7;
+Initialized an XNF list
+Decoded the first conjunction:  000001
+about to decode  6  symbols
+#Called decodeDeltas
+read 6 popCounts:{3, 2, 2, 6, 3, 3}
+#Called decodeDifferenceMasks
+decoding using these ranges:{20, 15, 15, 1, 20, 20}
+checking if a range of  20 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 20
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 300
+iterator for arithmetic coder will get increased
+checking if a range of  1 causes an overflow, the accumulator = 4500
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 4500
+It caused an overflow!
+The current unit contains  4 values
+extracted value 0 from a range 1
+extracted value 12 from a range 15
+extracted value 7 from a range 15
+extracted value 0 from a range 20
+DecodedInUnit = {0, 12, 7, 0}
+temporary result ={0, 7, 12, 0}
+checking if a range of  20 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 20
+iterator for arithmetic coder will get increased
+The current unit contains  2 values
+extracted value 12 from a range 20
+extracted value 0 from a range 20
+DecodedInUnit = {12, 0}
+temporary result ={0, 7, 12, 0, 0, 12}
+the indexes are:
+{0, 7, 12, 0, 0, 12}
+
+
+Decoded the difference masks:
+{7, 18, 24, 63, 7, 38}
+Decoded the directions :{{1, 1, 0}
+{1, 1}
+{1, 1}
+{1, 0, 0, 0, 1, 1}
+{0, 1, 0}
+{1, 1, 1}
+}
+the deltas are
+{Diff:{@0:1, @1:1, @2:0, }, Diff:{@1:1, @4:1, }, Diff:{@3:1, @4:1, }, Diff:{@0:1, @1:0, @2:0, @3:0, @4:1, @5:1, }, Diff:{@0:0, @1:1, @2:0, }, Diff:{@1:1, @2:1, @5:1, }}
+the decoded conjunctions are: {XNF<6> size = 7, elements = {*0010*, 000*1*, 000001, 100110, 010***, 0*1***, 1000**, }
+#Called decodeXNF
+#Called decodeXNFDimensions
+amountOfConjs=16;
+ConjLength_read=6;
+amountOfConjs=16;
+Initialized an XNF list
+Decoded the first conjunction:  000011
+about to decode  15  symbols
+#Called decodeDeltas
+read 15 popCounts:{2, 2, 3, 2, 5, 3, 2, 2, 2, 3, 4, 2, 5, 2, 3}
+#Called decodeDifferenceMasks
+decoding using these ranges:{15, 15, 20, 15, 6, 20, 15, 15, 15, 20, 15, 15, 6, 15, 20}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 225
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 4500
+It caused an overflow!
+The current unit contains  3 values
+extracted value 1 from a range 20
+extracted value 1 from a range 15
+extracted value 0 from a range 15
+DecodedInUnit = {1, 1, 0}
+temporary result ={0, 1, 1}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  6 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 90
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 1800
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 27000
+It caused an overflow!
+The current unit contains  4 values
+extracted value 0 from a range 15
+extracted value 10 from a range 20
+extracted value 0 from a range 6
+extracted value 0 from a range 15
+DecodedInUnit = {0, 10, 0, 0}
+temporary result ={0, 1, 1, 0, 0, 10, 0}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 225
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 4500
+It caused an overflow!
+The current unit contains  3 values
+extracted value 0 from a range 20
+extracted value 0 from a range 15
+extracted value 2 from a range 15
+DecodedInUnit = {0, 0, 2}
+temporary result ={0, 1, 1, 0, 0, 10, 0, 2, 0, 0}
+checking if a range of  15 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 15
+iterator for arithmetic coder will get increased
+checking if a range of  6 causes an overflow, the accumulator = 225
+iterator for arithmetic coder will get increased
+checking if a range of  15 causes an overflow, the accumulator = 1350
+iterator for arithmetic coder will get increased
+checking if a range of  20 causes an overflow, the accumulator = 20250
+It caused an overflow!
+The current unit contains  4 values
+extracted value 0 from a range 15
+extracted value 4 from a range 6
+extracted value 0 from a range 15
+extracted value 3 from a range 15
+DecodedInUnit = {0, 4, 0, 3}
+temporary result ={0, 1, 1, 0, 0, 10, 0, 2, 0, 0, 3, 0, 4, 0}
+checking if a range of  20 causes an overflow, the accumulator = 1
+iterator for arithmetic coder will get increased
+The current unit contains  1 values
+extracted value 0 from a range 20
+DecodedInUnit = {0}
+temporary result ={0, 1, 1, 0, 0, 10, 0, 2, 0, 0, 3, 0, 4, 0, 0}
+the indexes are:
+{0, 1, 1, 0, 0, 10, 0, 2, 0, 0, 3, 0, 4, 0, 0}
+
+
+Decoded the difference masks:
+{3, 5, 11, 3, 31, 14, 3, 9, 3, 7, 27, 3, 61, 3, 7}
+Decoded the directions :{{0, 1}
+{0, 1}
+{1, 1, 1}
+{0, 1}
+{1, 0, 0, 1, 1}
+{0, 1, 0}
+{1, 1}
+{1, 0}
+{1, 1}
+{1, 1, 0}
+{1, 0, 1, 1}
+{0, 0}
+{1, 1, 0, 1, 1}
+{1, 1}
+{0, 1, 0}
+}
+the deltas are
+{Diff:{@0:0, @1:1, }, Diff:{@0:0, @2:1, }, Diff:{@0:1, @1:1, @3:1, }, Diff:{@0:0, @1:1, }, Diff:{@0:1, @1:0, @2:0, @3:1, @4:1, }, Diff:{@1:0, @2:1, @3:0, }, Diff:{@0:1, @1:1, }, Diff:{@0:1, @3:0, }, Diff:{@0:1, @1:1, }, Diff:{@0:1, @1:1, @2:0, }, Diff:{@0:1, @1:0, @3:1, @4:1, }, Diff:{@0:0, @1:0, }, Diff:{@0:1, @2:1, @3:0, @4:1, @5:1, }, Diff:{@0:1, @1:1, }, Diff:{@0:0, @1:1, @2:0, }}
+the decoded conjunctions are: {XNF<6> size = 16, elements = {100110, 10010*, 0*101*, 1000**, 0100*1, 010110, 01010*, 0001**, 0111*0, 000011, 011101, 00111*, 0*1001, 001100, 0000*0, 01*000, }
+#Called decodeXNF
+#Called decodeXNFDimensions
+amountOfConjs=0;
+ConjLength_read=6;
+amountOfConjs=0;
+Initialized an XNF list
+Extracted the XNFGroups, they are:
+{{XNF<6> size = 10, elements = {1000*0, 100*01, 000*11, 000*00, 001100, 011*01, 01*1*0, 001010, 01000*, 01101*, }, {XNF<6> size = 7, elements = {100000, 011000, 00*010, 01101*, 011110, 0100*1, 100110, }, {XNF<6> size = 11, elements = {100001, 100100, 0*0110, 001010, *00101, 01*101, 0011*0, *00011, 01*011, 011100, 011001, }, {XNF<6> size = 11, elements = {0*0101, 011100, 100100, 010*00, 000110, 000000, 001010, 00*111, 1000*1, 001001, 011011, }, {XNF<6> size = 7, elements = {100000, 000111, 000010, 001011, 0*1110, 010001, 100110, }, {XNF<6> size = 7, elements = {*0010*, 000*1*, 000001, 100110, 010***, 0*1***, 1000**, }, {XNF<6> size = 16, elements = {100110, 10010*, 0*101*, 1000**, 0100*1, 010110, 01010*, 0001**, 0111*0, 000011, 011101, 00111*, 0*1001, 001100, 0000*0, 01*000, }, {XNF<6> size = 0, elements = {}}
+#Called unpackXNFGroupIntoStream
+Closing the streams
+The original file was 39 bytes, compressed into 101 bytes
+
+Process finished with exit code 0

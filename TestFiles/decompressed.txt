@@ -1,0 +1,7 @@
+Just discovered that the system I use to make the differences between genes small is actually counterproductive.
+How joyous I am at last! Compression still doesn't work, but I've got a hunch about how to improve it:
+
+* find a very good sorting for the genes so that their mask difference as a power skip index is smaller
+* make an algorithm for the XNF improvement which takes in consideration the fact that the genes beyond the file size can be changed freely,
+        I'm not sure how much this would help, but i need to try
+        The problem is that it's a complicated issue that I've never been able to resolve.
